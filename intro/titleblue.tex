@@ -1,0 +1,59 @@
+\begin{titlepage}
+    \fontfamily{phv}\fontsize{18}{18}\selectfont
+    \definecolor{tfgblue}{rgb}{0,0.17,0.36}
+    \definecolor{mlight-gray}{gray}{0.8}
+    \pagecolor{tfgblue}\afterpage{\nopagecolor}
+    \color{white}
+    % \begin{figure}
+    \begin{tikzpicture}[remember picture, overlay]
+        \node [anchor=north west, below=70pt, right=30pt]  at (current page.north west)
+     {\includegraphics[height=120pt]{logouma.png}};
+
+        \node [anchor=north east, below=70pt, left=20pt]  at (current page.north east)
+     {\includegraphics[height=90pt]{logoetsii.png}};
+    \end{tikzpicture}
+    
+    \begin{center}
+        \vspace*{2cm}
+        {\large ESCUELA TÉCNICA SUPERIOR DE INGENIERÍA INFORMÁTICA}
+
+        \vspace{0.1cm}
+        {\large GRADUADO EN INGENIERÍA DEL SOFTWARE}
+        
+        \vspace{1.5cm}
+        \Large
+        \textbf{\textsc{Titulo}}
+
+        \vspace{0.7cm}
+
+        \Large
+        \textbf{\textsc{Title}}
+
+        \vspace{1.5cm}
+        \large
+        {\color{mlight-gray} Realizado por\\}
+        \textbf{Nombre del Alumno}
+
+        \vspace{0.5cm}
+        \large
+        {\color{mlight-gray} Tutorizado por\\}
+        \textbf{Nombre del/de la Tutor/a\\
+        Nombre del/de la Cotutor/a}
+
+        \vspace{0.5cm}
+        \large
+        {\color{mlight-gray} Departamento\\}
+        \textbf{Nombre del Departamento}
+
+        \vspace{1cm}
+        \large
+        UNIVERSIDAD DE MÁLAGA
+        \\
+        MÁLAGA, JUNIO DE 2020
+    \end{center}
+\end{titlepage}
+
+\begingroup
+    \pagestyle{empty}
+    \cleardoublepage
+\endgroup

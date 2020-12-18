@@ -1,0 +1,12 @@
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.toc
+*.synctex.gz
+*.ist
+*.glsdefs
+*.out
+__pycache__/
+*.py[cod]
+.vscode/

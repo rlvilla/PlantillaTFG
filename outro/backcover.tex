@@ -1,0 +1,25 @@
+\clearpage 
+\ifodd\value{page}\hbox{}\newpage\fi
+\thispagestyle{empty}
+
+\begin{tikzpicture}[remember picture, overlay]
+    \node [anchor=south west, above=-5pt, right=-8pt]  at (current page.south west)
+    {\includegraphics[height=320pt]{blueblock.png}};
+
+    \node [anchor=south west, above=110pt, right=30pt]  at (current page.south west)
+    {\includegraphics[height=75pt]{univumalogos.png}};
+
+    \fontfamily{phv}\selectfont
+    \linespread{1}
+    \Large
+    \color{white}
+    \node [align=center, anchor=south west, above=50pt, right=100pt]  at (current page.south west)
+    {E.T.S DE INGENIERÍA\\ INFORMÁTICA};
+
+    \large
+    \definecolor{light-gray}{gray}{0.9}
+    \color{light-gray}
+    \node [align=left, anchor=south east, above=65pt, left=50pt] at (current page.south east)
+    {E.T.S de Ingeniería\\ Informática\\ Bulevar Louis Pasteur, 35\\ 
+    Campus de Teatinos\\ 29071 Málaga\\};
+\end{tikzpicture}

@@ -1,0 +1,36 @@
+\documentclass[12pt]{book}
+\usepackage{tfgconf}
+\usepackage{glossary}
+
+\begin{document}
+%\subfile{intro/titleblue.tex}
+
+\subfile{intro/title.tex}
+
+\frontmatter
+\subfile{intro/abstract.tex}
+
+\mainmatter
+\printnoidxglossaries
+    \subfile{chapters/introduction.tex}
+
+    \subfile{chapters/chapter_1.tex}
+
+    \chapter{Capítulo Segundo}
+        \section{Sección Primera}
+            \lipsum[9-20]
+
+    \chapter{Capítulo Tercero}
+        \section{Sección Primera}
+            \lipsum[9-12]
+
+    \subfile{outro/conclusion.tex}
+
+    \subfile{outro/references.tex}
+    
+    \subfile{outro/appendix.tex}
+
+    \subfile{outro/backcover.tex}
+
+\end{document}
+

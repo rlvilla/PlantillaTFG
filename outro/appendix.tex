@@ -1,0 +1,21 @@
+\begin{appendices}
+    % Appendix titles modifyers
+    \renewcommand{\theHchapter}{A\arabic{chapter}}
+    \renewcommand{\theHsection}{A\arabic{section}}
+    \renewcommand*{\justifyheading}{\raggedleft}
+    \titleformat{\chapter}[display]
+        {\vspace{-3cm}
+            \normalfont\Huge\bfseries\justifyheading}
+        {\color{gray} \fontsize{48}{48}\selectfont \appendixname 
+        \hspace{0.1cm} \thechapter}
+        {20pt}{\fontsize{48}{48}\selectfont}
+    \titleformat{\section}
+        {\normalfont\Large\bfseries}{\thesection}{1em}{}
+    \titleformat{\subsection}
+        {\normalfont\large\bfseries}{\thesubsection}{1em}{}
+    \chapter{Apéndice Primero}
+        \lipsum[9-12]
+
+    \chapter{Apéndice Segundo}
+        \lipsum[9-12]
+\end{appendices}
